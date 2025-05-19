@@ -1,0 +1,17 @@
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/obj/Debug/net8.0/falcon_c_sharp_Grafica.csproj.AssemblyReference.cache
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/obj/Debug/net8.0/falcon_c_sharp_Grafica.GeneratedMSBuildEditorConfig.editorconfig
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/obj/Debug/net8.0/falcon_c_sharp_Grafica.AssemblyInfoInputs.cache
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/obj/Debug/net8.0/falcon_c_sharp_Grafica.AssemblyInfo.cs
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/obj/Debug/net8.0/falcon_c_sharp_Grafica.csproj.CoreCompileInputs.cache
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/bin/Debug/net8.0/falcon_c_sharp_Grafica
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/bin/Debug/net8.0/falcon_c_sharp_Grafica.deps.json
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/bin/Debug/net8.0/falcon_c_sharp_Grafica.runtimeconfig.json
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/bin/Debug/net8.0/falcon_c_sharp_Grafica.dll
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/bin/Debug/net8.0/falcon_c_sharp_Grafica.pdb
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/bin/Debug/net8.0/BouncyCastle.Cryptography.dll
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/obj/Debug/net8.0/falcon_c_sharp_Grafica.csproj.CopyComplete
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/obj/Debug/net8.0/falcon_c_sharp_Grafica.dll
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/obj/Debug/net8.0/refint/falcon_c_sharp_Grafica.dll
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/obj/Debug/net8.0/falcon_c_sharp_Grafica.pdb
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/obj/Debug/net8.0/falcon_c_sharp_Grafica.genruntimeconfig.cache
+/home/albert/Documentos/TFG/Code_tres/falcon_c_sharp_Grafica/obj/Debug/net8.0/ref/falcon_c_sharp_Grafica.dll

@@ -1,0 +1,14 @@
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Ecdsa/bin/Debug/net8.0/Ecdsa
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Ecdsa/bin/Debug/net8.0/Ecdsa.deps.json
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Ecdsa/bin/Debug/net8.0/Ecdsa.runtimeconfig.json
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Ecdsa/bin/Debug/net8.0/Ecdsa.dll
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Ecdsa/bin/Debug/net8.0/Ecdsa.pdb
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Ecdsa/obj/Debug/net8.0/Ecdsa.GeneratedMSBuildEditorConfig.editorconfig
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Ecdsa/obj/Debug/net8.0/Ecdsa.AssemblyInfoInputs.cache
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Ecdsa/obj/Debug/net8.0/Ecdsa.AssemblyInfo.cs
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Ecdsa/obj/Debug/net8.0/Ecdsa.csproj.CoreCompileInputs.cache
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Ecdsa/obj/Debug/net8.0/Ecdsa.dll
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Ecdsa/obj/Debug/net8.0/refint/Ecdsa.dll
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Ecdsa/obj/Debug/net8.0/Ecdsa.pdb
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Ecdsa/obj/Debug/net8.0/Ecdsa.genruntimeconfig.cache
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Ecdsa/obj/Debug/net8.0/ref/Ecdsa.dll

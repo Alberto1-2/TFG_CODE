@@ -1,0 +1,7 @@
+Versión,Tamaño Mensaje,Tiempo Generación Claves (±Desviación),Tiempo Firma (±Desviación),Tiempo Verificación (±Desviación)
+dilithium2,Pequeño,0.3373 (+- 1.1530),0.5499 (+- 0.4324),0.1656 (+- 0.2680)
+dilithium2,Grande,0.3373 (+- 1.1530),0.6015 (+- 0.6196),0.1991 (+- 0.1812)
+dilithium3,Pequeño,0.3112 (+- 0.0993),0.7294 (+- 0.5217),0.1991 (+- 0.0425)
+dilithium3,Grande,0.3112 (+- 0.0993),0.7479 (+- 0.4982),0.2282 (+- 0.0418)
+dilithium5,Pequeño,0.4163 (+- 0.0990),0.8720 (+- 0.4963),0.3162 (+- 0.1043)
+dilithium5,Grande,0.4163 (+- 0.0990),0.9008 (+- 0.5093),0.3415 (+- 0.0713)

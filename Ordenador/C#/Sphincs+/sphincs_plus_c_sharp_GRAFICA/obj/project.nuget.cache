@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wPKT+gvIee1jnTaOWT1AMoV9QyHFDJs1PhTQlmY7Q32Ws+KxSe6Ada5iLp9QvLiDfBNPj+Tj8BhK9AZYHeZ9RA==",
+  "success": true,
+  "projectFilePath": "/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/sphincs_plus_c_sharp_GRAFICA.csproj",
+  "expectedPackageFiles": [
+    "/home/albert/.nuget/packages/bouncycastle.netcore/2.2.1/bouncycastle.netcore.2.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

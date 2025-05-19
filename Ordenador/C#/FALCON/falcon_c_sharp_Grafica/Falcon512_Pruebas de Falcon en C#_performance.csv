@@ -1,0 +1,11 @@
+Iteración,Falcon Version,Tamaño Mensaje,Tiempo Generación Claves,Tiempo Firma,Tiempo Verificación,Tiempo Total
+1,Falcon512,Pruebas de Falcon en C#,175,1932,12,2292,1,3100,188,7324
+2,Falcon512,Pruebas de Falcon en C#,72,2138,6,4892,0,2226,78,9256
+3,Falcon512,Pruebas de Falcon en C#,38,6396,5,5683,0,2108,44,4187
+4,Falcon512,Pruebas de Falcon en C#,59,1584,5,6033,0,7643,65,5260
+5,Falcon512,Pruebas de Falcon en C#,64,5644,5,6698,0,2070,70,4412
+6,Falcon512,Pruebas de Falcon en C#,98,7147,4,5346,0,1980,103,4473
+7,Falcon512,Pruebas de Falcon en C#,18,0167,2,9702,0,1631,21,1500
+8,Falcon512,Pruebas de Falcon en C#,14,6884,1,6226,0,1608,16,4718
+9,Falcon512,Pruebas de Falcon en C#,26,5788,1,8228,0,1319,28,5335
+10,Falcon512,Pruebas de Falcon en C#,29,3521,6,1316,0,5984,36,0821

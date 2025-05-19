@@ -1,0 +1,5 @@
+Versión,Tamaño Mensaje,Generación Claves,Firma,Verificación
+Falcon512,pequeño,12.0404 ms (+-6.9870),1.2724 ms (+-0.4644),0.0658 ms (+-0.0697)
+Falcon512,grande,11.7381 ms (+-4.6141),1.2974 ms (+-0.0758),0.1236 ms (+-0.0154)
+Falcon1024,pequeño,32.4563 ms (+-11.8452),2.4914 ms (+-0.0757),0.1117 ms (+-0.0104)
+Falcon1024,grande,32.1085 ms (+-10.9767),2.6236 ms (+-0.1469),0.1805 ms (+-0.0127)

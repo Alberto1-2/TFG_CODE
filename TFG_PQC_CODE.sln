@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordenador", "Ordenador", "{B17C884C-1572-3E57-9BE0-3E6786812972}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "C#", "C#", "{94FD22E0-ABBE-1C84-6CF5-2FD8F53F69DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dilithium", "Dilithium", "{C5436CE4-1D05-C8B2-DFB4-158453024C49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DilithiumC_sharp_Graficas", "Ordenador\C#\Dilithium\DilithiumC_sharp_Graficas\DilithiumC_sharp_Graficas.csproj", "{80EEAA38-9D5E-D861-02F6-7BF2D5A2C167}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80EEAA38-9D5E-D861-02F6-7BF2D5A2C167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80EEAA38-9D5E-D861-02F6-7BF2D5A2C167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80EEAA38-9D5E-D861-02F6-7BF2D5A2C167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80EEAA38-9D5E-D861-02F6-7BF2D5A2C167}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{94FD22E0-ABBE-1C84-6CF5-2FD8F53F69DB} = {B17C884C-1572-3E57-9BE0-3E6786812972}
+		{C5436CE4-1D05-C8B2-DFB4-158453024C49} = {94FD22E0-ABBE-1C84-6CF5-2FD8F53F69DB}
+		{80EEAA38-9D5E-D861-02F6-7BF2D5A2C167} = {C5436CE4-1D05-C8B2-DFB4-158453024C49}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A140DBF6-C54F-4F64-AE83-318769E2BFA1}
+	EndGlobalSection
+EndGlobal

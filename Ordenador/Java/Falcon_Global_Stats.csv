@@ -1,0 +1,5 @@
+Versión,Tamaño Mensaje,Tiempo Generación Claves (±Desviación),Tiempo Firma (±Desviación),Tiempo Verificación (±Desviación)
+falcon-512,pequeño,10.1246 (+- 4.1733),0.9899 (+- 0.6066),0.0783 (+- 0.0734)
+falcon-512,grande,9.8398 (+- 3.2952),0.9508 (+- 0.1736),0.1141 (+- 0.0075)
+falcon-1024,pequeño,26.6595 (+- 8.1550),1.8872 (+- 0.2502),0.1119 (+- 0.0294)
+falcon-1024,grande,26.0848 (+- 7.1994),1.9244 (+- 0.2125),0.1676 (+- 0.0244)

@@ -1,0 +1,17 @@
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/bin/Debug/net8.0/sphincs_plus_c_sharp_GRAFICA
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/bin/Debug/net8.0/sphincs_plus_c_sharp_GRAFICA.deps.json
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/bin/Debug/net8.0/sphincs_plus_c_sharp_GRAFICA.runtimeconfig.json
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/bin/Debug/net8.0/sphincs_plus_c_sharp_GRAFICA.dll
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/bin/Debug/net8.0/sphincs_plus_c_sharp_GRAFICA.pdb
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/bin/Debug/net8.0/BouncyCastle.Crypto.dll
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/obj/Debug/net8.0/sphincs_plus_c_sharp_GRAFICA.csproj.AssemblyReference.cache
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/obj/Debug/net8.0/sphincs_plus_c_sharp_GRAFICA.GeneratedMSBuildEditorConfig.editorconfig
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/obj/Debug/net8.0/sphincs_plus_c_sharp_GRAFICA.AssemblyInfoInputs.cache
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/obj/Debug/net8.0/sphincs_plus_c_sharp_GRAFICA.AssemblyInfo.cs
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/obj/Debug/net8.0/sphincs_plus_c_sharp_GRAFICA.csproj.CoreCompileInputs.cache
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/obj/Debug/net8.0/sphincs_plus_c_sharp_GRAFICA.csproj.CopyComplete
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/obj/Debug/net8.0/sphincs_plus_c_sharp_GRAFICA.dll
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/obj/Debug/net8.0/refint/sphincs_plus_c_sharp_GRAFICA.dll
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/obj/Debug/net8.0/sphincs_plus_c_sharp_GRAFICA.pdb
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/obj/Debug/net8.0/sphincs_plus_c_sharp_GRAFICA.genruntimeconfig.cache
+/home/albert/Documentos/TFG/Code_bis/sphincs_plus_c_sharp_GRAFICA/obj/Debug/net8.0/ref/sphincs_plus_c_sharp_GRAFICA.dll

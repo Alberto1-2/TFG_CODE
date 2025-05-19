@@ -1,0 +1,17 @@
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/bin/Debug/net8.0/MiproyectoC_sharp_Graficas
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/bin/Debug/net8.0/MiproyectoC_sharp_Graficas.deps.json
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/bin/Debug/net8.0/MiproyectoC_sharp_Graficas.runtimeconfig.json
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/bin/Debug/net8.0/MiproyectoC_sharp_Graficas.dll
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/bin/Debug/net8.0/MiproyectoC_sharp_Graficas.pdb
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/obj/Debug/net8.0/MiproyectoC_sharp_Graficas.GeneratedMSBuildEditorConfig.editorconfig
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/obj/Debug/net8.0/MiproyectoC_sharp_Graficas.AssemblyInfoInputs.cache
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/obj/Debug/net8.0/MiproyectoC_sharp_Graficas.AssemblyInfo.cs
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/obj/Debug/net8.0/MiproyectoC_sharp_Graficas.csproj.CoreCompileInputs.cache
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/obj/Debug/net8.0/MiproyectoC_sharp_Graficas.dll
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/obj/Debug/net8.0/refint/MiproyectoC_sharp_Graficas.dll
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/obj/Debug/net8.0/MiproyectoC_sharp_Graficas.pdb
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/obj/Debug/net8.0/MiproyectoC_sharp_Graficas.genruntimeconfig.cache
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/obj/Debug/net8.0/ref/MiproyectoC_sharp_Graficas.dll
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/bin/Debug/net8.0/BouncyCastle.Crypto.dll
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/obj/Debug/net8.0/MiproyectoC_sharp_Graficas.csproj.AssemblyReference.cache
+/home/albert/Documentos/TFG/Code_bis/MiproyectoC_sharp_Graficas/obj/Debug/net8.0/MiproyectoC_sharp_Graficas.csproj.CopyComplete

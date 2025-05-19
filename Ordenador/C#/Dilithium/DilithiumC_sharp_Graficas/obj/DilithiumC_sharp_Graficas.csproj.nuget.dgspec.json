@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/albert/Escritorio/TFG_PQC_CODE/Ordenador/C#/Dilithium/DilithiumC_sharp_Graficas/DilithiumC_sharp_Graficas.csproj": {}
+  },
+  "projects": {
+    "/home/albert/Escritorio/TFG_PQC_CODE/Ordenador/C#/Dilithium/DilithiumC_sharp_Graficas/DilithiumC_sharp_Graficas.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/albert/Escritorio/TFG_PQC_CODE/Ordenador/C#/Dilithium/DilithiumC_sharp_Graficas/DilithiumC_sharp_Graficas.csproj",
+        "projectName": "DilithiumC_sharp_Graficas",
+        "projectPath": "/home/albert/Escritorio/TFG_PQC_CODE/Ordenador/C#/Dilithium/DilithiumC_sharp_Graficas/DilithiumC_sharp_Graficas.csproj",
+        "packagesPath": "/home/albert/.nuget/packages/",
+        "outputPath": "/home/albert/Escritorio/TFG_PQC_CODE/Ordenador/C#/Dilithium/DilithiumC_sharp_Graficas/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/albert/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "BouncyCastle.NetCore": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.116/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

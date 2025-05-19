@@ -1,0 +1,14 @@
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Rsa/obj/Debug/net8.0/Rsa.GeneratedMSBuildEditorConfig.editorconfig
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Rsa/obj/Debug/net8.0/Rsa.AssemblyInfoInputs.cache
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Rsa/obj/Debug/net8.0/Rsa.AssemblyInfo.cs
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Rsa/obj/Debug/net8.0/Rsa.csproj.CoreCompileInputs.cache
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Rsa/bin/Debug/net8.0/Rsa
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Rsa/bin/Debug/net8.0/Rsa.deps.json
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Rsa/bin/Debug/net8.0/Rsa.runtimeconfig.json
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Rsa/bin/Debug/net8.0/Rsa.dll
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Rsa/bin/Debug/net8.0/Rsa.pdb
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Rsa/obj/Debug/net8.0/Rsa.dll
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Rsa/obj/Debug/net8.0/refint/Rsa.dll
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Rsa/obj/Debug/net8.0/Rsa.pdb
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Rsa/obj/Debug/net8.0/Rsa.genruntimeconfig.cache
+/home/albert/Documentos/TFG/TFG_PRECUANTICO/C#/Rsa/obj/Debug/net8.0/ref/Rsa.dll
