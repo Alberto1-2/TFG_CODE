@@ -1,8 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Nombre del archivo combinado
-file = "SPHINCS+.csv"
+file = "SPHINCS+_NATIVE.csv"
 
 # Parámetros de las versiones
 implementations = [
@@ -12,8 +11,8 @@ implementations = [
 options = ["f", "s"]
 sizes = [128, 192, 256]
 
-# Número de iteraciones por combinación de versión
-iterations_per_version = 100  # Cambiar al número correcto
+
+iterations_per_version = 70  # Cambiar según número de iteraciones ejecutadas
 
 # Generar las etiquetas de las versiones
 versions = []
@@ -23,10 +22,8 @@ for impl, hashes in implementations:
             for size in sizes:
                 versions.append(f"{impl}-{h}-{size}{opt}")
 
-# Leer el archivo CSV
 df = pd.read_csv(file)
 
-# Verificar si el archivo tiene las columnas esperadas
 if "Tiempo Total (ms)" not in df.columns:
     raise ValueError(f"El archivo {file} no contiene la columna 'Tiempo Total (ms)'.")
 
@@ -41,13 +38,6 @@ data = {version: df[df['label'] == version]["Tiempo Total (ms)"].tolist() for ve
 plt.figure(figsize=(10, 6))
 plt.boxplot([data[version] for version in versions],
             labels=versions, showmeans=True)
-
-# Calcular medias
-#means = [pd.Series(data[version]).mean() for version in versions]
-
-# Superponer las medias en el gráfico como marcadores
-#for i, mean in enumerate(means, start=1):  # Enumerar desde 1 (índices del gráfico de cajas)
-#    plt.scatter(i, mean, color='green', marker='^', label='Media' if i == 1 else "")
 
 # Personalizar el gráfico
 plt.title("Comparación de tiempos totales de ejecución por versión de SPHINCS+")

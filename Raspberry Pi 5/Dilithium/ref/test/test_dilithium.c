@@ -6,9 +6,11 @@
 #include "../sign.h"
 #include <math.h>  // Para usar sqrt()
 
+#define VERSION_STR(x) ((x) == 2 ? "Dilithium2" : (x) == 3 ? "Dilithium3" : "Dilithium5")
+
 #define MLEN 1000
 #define CTXLEN 14
-#define NTESTS 1000
+#define NTESTS 1000 // 1000 bytes de tamaño de mensaje
 
 int main(void)
 {
@@ -23,15 +25,19 @@ int main(void)
     uint8_t pk[CRYPTO_PUBLICKEYBYTES];
     uint8_t sk[CRYPTO_SECRETKEYBYTES];
 
-    snprintf((char*)ctx, CTXLEN, "test_dilitium");
+    char filename[256];
+    snprintf(filename, sizeof(filename), "%s_REF_results.csv", VERSION_STR(DILITHIUM_MODE));
+
 
     // Variables para medir el tiempo total
     clock_t start_time, end_time;
     double keygen_time = 0.0, sign_time = 0.0, verify_time = 0.0;
     double keygen_sq_time = 0.0, sign_sq_time = 0.0, verify_sq_time = 0.0;
+    double total_sq_time = 0.0;
+    double total_time = 0.0;
 
     // Abrir archivo CSV para escritura
-    FILE *csv_file = fopen("dilithium_test_results.csv", "w");
+    FILE *csv_file = fopen(filename, "w");
     if (!csv_file) {
         fprintf(stderr, "Error opening file for writing\n");
         return -1;
@@ -69,6 +75,8 @@ int main(void)
 
         // Calcular tiempo total de la iteración
         double iteration_time = keygen_iter_time + sign_iter_time + verify_iter_time;
+        total_time += iteration_time;  // Acumula el tiempo total
+        total_sq_time += iteration_time * iteration_time;  // Acumula el cuadrado del tiempo total
 
         // Escribir los resultados de esta iteración en el archivo CSV
         fprintf(csv_file, "%zu,%.4f,%.4f,%.4f,%.4f\n", i + 1, keygen_iter_time, sign_iter_time, verify_iter_time, iteration_time);
@@ -120,24 +128,23 @@ int main(void)
     double keygen_stddev = sqrt((keygen_sq_time / NTESTS) - (keygen_time / NTESTS) * (keygen_time / NTESTS));
     double sign_stddev = sqrt((sign_sq_time / NTESTS) - (sign_time / NTESTS) * (sign_time / NTESTS));
     double verify_stddev = sqrt((verify_sq_time / NTESTS) - (verify_time / NTESTS) * (verify_time / NTESTS));
+    
+    // Cálculos para el tiempo total y su desviación estándar
+    double total_time_mean = total_time / NTESTS;
+    double total_stddev = sqrt((total_sq_time / NTESTS) - (total_time_mean * total_time_mean));
 
     // Mostrar el tiempo medio y la desviación estándar
     printf("Medio keygen time: %.4f ms\n", (keygen_time / NTESTS));  // Mostrar tiempo medio
     printf("Desviación típica keygen time: %.4f ms\n", keygen_stddev);  // Mostrar desviación típica
 
-    printf("Media sign time: %.4f ms\n", (sign_time / NTESTS));  // Mostrar tiempo medio
-    printf("Desviación típica sign time: %.4f ms\n", sign_stddev);  // Mostrar desviación típica
+    printf("Media sign time: %.4f ms\n", (sign_time / NTESTS));  
+    printf("Desviación típica sign time: %.4f ms\n", sign_stddev);  
 
-    printf("Media verify time: %.4f ms\n", (verify_time / NTESTS));  // Mostrar tiempo medio
-    printf("Desviación típica verify time: %.4f ms\n", verify_stddev);  // Mostrar desviación típica
+    printf("Media verify time: %.4f ms\n", (verify_time / NTESTS));  
+    printf("Desviación típica verify time: %.4f ms\n", verify_stddev);  
 
-    // Determinar si el mensaje es grande o pequeño
-    if (MLEN > 100) {
-        printf("Large message size\n");
-    } else {
-        printf("Small message size\n");
-    }
-
+    printf("Tiempo total medio: %.4f ms\n", total_time_mean);
+    printf("Desviación típica tiempo total: %.4f ms\n", total_stddev);
     // Cerrar el archivo CSV
     fclose(csv_file);
 

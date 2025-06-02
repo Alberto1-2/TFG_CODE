@@ -2,35 +2,35 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Nombres de los archivos CSV
-files = ["PI5dilithium2_test_results.csv", "PI5dilithium3_test_results.csv", "PI5dilithium5_test_results.csv"]
+files = ["Dilithium2_REF_results.csv", "Dilithium3_REF_results.csv", "Dilithium5_REF_results.csv",
+         "Dilithium2_NEON_results.csv", "Dilithium3_NEON_results.csv", "Dilithium5_NEON_results.csv"]
 
 # Crear un diccionario para almacenar los tiempos totales por versión
-data = {"PI5dilithium2_test": [], "PI5dilithium3_test": [], "PI5dilithium5_test": []}
+data = {"Dilithium2_REF": [], "Dilithium3_REF": [], "Dilithium5_REF": [],
+        "Dilithium2_NEON": [], "Dilithium3_NEON": [], "Dilithium5_NEON": []}
 
-# Leer y procesar cada archivo CSV
 for file in files:
     # Leer el archivo CSV
     df = pd.read_csv(file)
     
-    # Verificar si el archivo tiene las columnas esperadas
+    # Verificamos si el archivo tiene las columnas esperadas
     if "Total Time (ms)" in df.columns:
-        # Agregar los tiempos totales de este archivo al diccionario correspondiente
-        # Usar el nombre del archivo (sin la extensión) como la clave
-        key = file.split('_')[0] + "_" + file.split('_')[1]  # Crear la clave en formato <dilithiumX_test> o <dilithiumX_avx>
-        data[key].extend(df["Total Time (ms)"])  # Agregar los tiempos totales del archivo
+        # Añadimos los tiempos totales de este archivo al diccionario correspondiente
+        key = file.split('_')[0] + "_" + file.split('_')[1]  # Crea la clave en formato <dilithiumX_test> o <dilithiumX_neon>
+        data[key].extend(df["Total Time (ms)"]) 
     else:
         print(f"Advertencia: El archivo {file} no contiene la columna 'Total Time (ms)'.")
 
 # Crear el diagrama de cajas
 plt.figure(figsize=(12, 8))
-plt.boxplot([data["PI5dilithium2_test"], data["PI5dilithium3_test"], data["PI5dilithium5_test"]],
-            labels=["dilithium2", "dilithium3", "dilithium5"])
+plt.boxplot([data["Dilithium2_REF"], data["Dilithium3_REF"], data["Dilithium5_REF"],
+             data["Dilithium2_NEON"], data["Dilithium3_NEON"], data["Dilithium5_NEON"]],
+            labels=["dilithium2", "dilithium3", "dilithium5", "dilithium2_neon", "dilithium3_neon", "dilithium5_neon"])
 
 # Calcular medias
 means = [pd.Series(data[key]).mean() for key in data.keys()]
 
-# Superponer las medias en el gráfico como marcadores
-for i, mean in enumerate(means, start=1):  # Enumerar desde 1 (índices del gráfico de cajas)
+for i, mean in enumerate(means, start=1):
     plt.scatter(i, mean, color='green', marker='^')
 
 # Personalizar el gráfico
