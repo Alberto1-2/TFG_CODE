@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/albert/Escritorio/TFG_PQC_CODE/Ordenador/C#/Dilithium/DilithiumC_sharp_Graficas/DilithiumC_sharp_Graficas.csproj": {}
+    "/home/albert/Documentos/TFG/Code_bis/DilithiumC_sharp_Graficas/DilithiumC_sharp_Graficas.csproj": {}
   },
   "projects": {
-    "/home/albert/Escritorio/TFG_PQC_CODE/Ordenador/C#/Dilithium/DilithiumC_sharp_Graficas/DilithiumC_sharp_Graficas.csproj": {
+    "/home/albert/Documentos/TFG/Code_bis/DilithiumC_sharp_Graficas/DilithiumC_sharp_Graficas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/albert/Escritorio/TFG_PQC_CODE/Ordenador/C#/Dilithium/DilithiumC_sharp_Graficas/DilithiumC_sharp_Graficas.csproj",
+        "projectUniqueName": "/home/albert/Documentos/TFG/Code_bis/DilithiumC_sharp_Graficas/DilithiumC_sharp_Graficas.csproj",
         "projectName": "DilithiumC_sharp_Graficas",
-        "projectPath": "/home/albert/Escritorio/TFG_PQC_CODE/Ordenador/C#/Dilithium/DilithiumC_sharp_Graficas/DilithiumC_sharp_Graficas.csproj",
+        "projectPath": "/home/albert/Documentos/TFG/Code_bis/DilithiumC_sharp_Graficas/DilithiumC_sharp_Graficas.csproj",
         "packagesPath": "/home/albert/.nuget/packages/",
-        "outputPath": "/home/albert/Escritorio/TFG_PQC_CODE/Ordenador/C#/Dilithium/DilithiumC_sharp_Graficas/obj/",
+        "outputPath": "/home/albert/Documentos/TFG/Code_bis/DilithiumC_sharp_Graficas/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/albert/.nuget/NuGet/NuGet.Config"

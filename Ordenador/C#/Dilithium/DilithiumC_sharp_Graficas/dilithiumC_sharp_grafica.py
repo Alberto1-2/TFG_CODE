@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-files = ["Dilithium2_performance.csv", "Dilithium3_performance.csv", "Dilithium5_performance.csv"]
+files = ["Dilithium2_performance2.csv", "Dilithium3_performance2.csv", "Dilithium5_performance2.csv"]
 
 # Creamos un diccionario para almacenar los tiempos totales por versión de Kyber
 data = {"Dilithium2": [], "Dilithium3": [], "Dilithium5": []}

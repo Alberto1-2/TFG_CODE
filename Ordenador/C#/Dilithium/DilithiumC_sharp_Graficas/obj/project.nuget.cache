@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8x/90TxsQk9E/V88fgE0RDf+HvvAa7mpJGwalL1xcyQX54K5zwfct/kQR/VU49cpdpNoadFTFLx+uTQFRF5IBA==",
+  "dgSpecHash": "RBurt/MdxYfxBLUe1GtHCwt2kM/vjkjy14DkjT/Uvo/6yXD4p9ZoAnXBlsZPWjGpedE952SbLKigcHd3UAiaTA==",
   "success": true,
-  "projectFilePath": "/home/albert/Escritorio/TFG_PQC_CODE/Ordenador/C#/Dilithium/DilithiumC_sharp_Graficas/DilithiumC_sharp_Graficas.csproj",
+  "projectFilePath": "/home/albert/Documentos/TFG/Code_bis/DilithiumC_sharp_Graficas/DilithiumC_sharp_Graficas.csproj",
   "expectedPackageFiles": [
     "/home/albert/.nuget/packages/bouncycastle.netcore/2.2.1/bouncycastle.netcore.2.2.1.nupkg.sha512"
   ],

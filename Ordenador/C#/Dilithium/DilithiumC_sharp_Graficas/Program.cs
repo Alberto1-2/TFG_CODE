@@ -15,14 +15,14 @@ namespace DilithiumC_sharp_Graficas
         {
             try
             {
-                // Configuración para usar "." en vez de ","
+                // Configuración cultural (para usar "." como separador decimal)
                 CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
                 CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
 
                 var msg = "Hola, estamos en pruebas con el algoritmo pqc Crystals Dilithium";
                 int iterations = 1000; // Número de repeticiones
 
-                var versions = new[] { "Dilithium2", "Dilithium3", "Dilithium5" };
+                var versions = new[] {"Dilithium2", "Dilithium2", "Dilithium3", "Dilithium5" };
                 foreach (var version in versions)
                 {
                     Console.WriteLine($"Ejecutando pruebas para {version}...");
@@ -59,21 +59,23 @@ namespace DilithiumC_sharp_Graficas
             // Agregar la cabecera solo una vez
             results.Add("Iteración,Dilithium Version,Tiempo Generación Claves,Tiempo Firma,Tiempo Verificación,Tiempo Total");
 
-            // Ejecutamos una iteración para que cargue los recursos
-            var warmupkeyPair = keyPairGen.GenerateKeyPair();
-            var warmuppubKey = (DilithiumPublicKeyParameters)warmupkeyPair.Public;
-            var warmupprivKey = (DilithiumPrivateKeyParameters)warmupkeyPair.Private;
+            // Ejecutamos unas iteraciones previas para que cargue los recursos
+            for (int i = 0; i < 100; i++)
+            {
+                var warmupkeyPair = keyPairGen.GenerateKeyPair();
+                var warmuppubKey = (DilithiumPublicKeyParameters)warmupkeyPair.Public;
+                var warmupprivKey = (DilithiumPrivateKeyParameters)warmupkeyPair.Private;
 
-            // Firmar
-            var warmupaliceSign = new DilithiumSigner();
-            warmupaliceSign.Init(true, warmupprivKey);
-            var warmupsignature = warmupaliceSign.GenerateSignature(System.Text.Encoding.UTF8.GetBytes(msg));
+                // Firmar
+                var warmupaliceSign = new DilithiumSigner();
+                warmupaliceSign.Init(true, warmupprivKey);
+                var warmupsignature = warmupaliceSign.GenerateSignature(System.Text.Encoding.UTF8.GetBytes(msg));
 
-            // Verificar firma
-            var warmupbobVerify = new DilithiumSigner();
-            warmupbobVerify.Init(false, warmuppubKey);
-            var warmuprtn = warmupbobVerify.VerifySignature(System.Text.Encoding.UTF8.GetBytes(msg), warmupsignature);
-
+                // Verificar firma
+                var warmupbobVerify = new DilithiumSigner();
+                warmupbobVerify.Init(false, warmuppubKey);
+                var warmuprtn = warmupbobVerify.VerifySignature(System.Text.Encoding.UTF8.GetBytes(msg), warmupsignature);
+            }
 
             for (int i = 0; i < iterations; i++)
             {
@@ -113,11 +115,12 @@ namespace DilithiumC_sharp_Graficas
                 // Calcular tiempo total
                 var totalTime = keyGenTime + signTime + verifyTime;
 
-                // Guardar los resultados en la lista
+                // Guardar los resultados en la lista (sin escribir en el archivo aún)
                 results.Add($"{i + 1},{method},{keyGenTime:F4},{signTime:F4},{verifyTime:F4},{totalTime:F4}");
             }
 
-            var csvFileName = $"{method}_performance.csv";
+            // Escribir los resultados en el archivo CSV solo al final
+            var csvFileName = $"{method}_performance2.csv";
             File.WriteAllLines(csvFileName, results);
             Console.WriteLine($"Resultados exportados a '{csvFileName}'.");
 
