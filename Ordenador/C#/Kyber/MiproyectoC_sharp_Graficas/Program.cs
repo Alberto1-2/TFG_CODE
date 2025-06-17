@@ -18,13 +18,13 @@ namespace MiproyectoC_sharp_Graficas
             CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("en-US");
 
             // Opciones posibles en Kyber
-            var validSizes = new[] { "kyber512", "kyber768", "kyber1024" };
+            var validSizes = new[] { "kyber512", "kyber512", "kyber768", "kyber1024" };
 
             // Iterar todas las versiones de Kyber
             foreach (var size in validSizes)
             {
                 Console.WriteLine("\nEjecutando pruebas para Kyber-{0}...", size);
-                RunTests(size, 1000); // Ejecutamos 1000 iteraciones de cada tamaño de Kyber
+                RunTests(size, 1000); // Ejecutar 1000 iteraciones de cada tamaño de Kyber
             }
 
             Console.WriteLine("\nPruebas completadas.");
@@ -44,21 +44,23 @@ namespace MiproyectoC_sharp_Graficas
             var kyberKeyPairGenerator = new KyberKeyPairGenerator();
             kyberKeyPairGenerator.Init(keyGenParameters);
 
-             // "Calentamiento" (warm-up) para cargar recursos antes de medir
-            var warmupKeyPair = kyberKeyPairGenerator.GenerateKeyPair();
-            var warmupPublic = (KyberPublicKeyParameters)warmupKeyPair.Public;
-            var warmupPrivate = (KyberPrivateKeyParameters)warmupKeyPair.Private;
+            // "Calentamiento" (warm-up) para cargar recursos antes de medir
+            for (int i = 0; i < 100; i++)
+            {
+                var warmupKeyPair = kyberKeyPairGenerator.GenerateKeyPair();
+                var warmupPublic = (KyberPublicKeyParameters)warmupKeyPair.Public;
+                var warmupPrivate = (KyberPrivateKeyParameters)warmupKeyPair.Private;
 
-            var bobWarmup = new KyberKemGenerator(random);
-            var warmupEncapsulated = bobWarmup.GenerateEncapsulated(warmupPublic);
-            var warmupCipherText = warmupEncapsulated.GetEncapsulation();
+                var bobWarmup = new KyberKemGenerator(random);
+                var warmupEncapsulated = bobWarmup.GenerateEncapsulated(warmupPublic);
+                var warmupCipherText = warmupEncapsulated.GetEncapsulation();
 
-            var aliceWarmup = new KyberKemExtractor(warmupPrivate);
-            var warmupSecret = aliceWarmup.ExtractSecret(warmupCipherText);
-
+                var aliceWarmup = new KyberKemExtractor(warmupPrivate);
+                var warmupSecret = aliceWarmup.ExtractSecret(warmupCipherText);
+            }
 
             // Abrir archivo CSV para escribir los resultados
-            using (var writer = new StreamWriter($"{size}_performance.csv"))
+            using (var writer = new StreamWriter($"{size}_performance2.csv"))
             {
                 // Escribir cabecera
                 writer.WriteLine("Iteración,Kyber Version,Tiempo Generación Claves,Tiempo Encapsulación,Tiempo Decapsulación,Tiempo Total");
@@ -121,7 +123,7 @@ namespace MiproyectoC_sharp_Graficas
                 Console.WriteLine("Promedio Total: {0:F4} ms (+/- {1:F4})", avgTotal, stdTotal);
             }
 
-            Console.WriteLine($"Datos exportados a '{size}_performance.csv'.");
+            Console.WriteLine($"Datos exportados a '{size}_performance2.csv'.");
         }
 
         static double CalculateStdDev(List<double> values, double mean)
