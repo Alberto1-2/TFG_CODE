@@ -8,6 +8,8 @@ FALCON.py [https://github.com/tprest/falcon.py] de FALCON-sign para FALCON y con
 
 Para los lenguajes de C# y Java, se han diseñado a partir de la web https://asecuritysite.com/ y de la biblioteca de Bouncy Castle.
 
+** Solo se proporcionan los ficheros que se han modificado para realizar la pruebas, en el caso de C y Python habría que clonar los repositorios indicados, y en Java y C#, instalar la librería de Bouncy Castle, junto a las herramientas de desarrollo para trabajar con ambos lenguajes (Java (JDK) y .NET SDK respectivamente)
+
 **Por simplificación, en Raspberry Pi 5, se muestra el código en C, para el resto de lenguajes utilizar los códigos disponibles en la carpeta Ordenador (modificando únicamente el nombre de los ficheros .csv y/o gráficas que se generen, y pudiendo modificar las ejecuciones para ejecutar 1 o más versiones del algoritmo, p.ej en RSA en C#: // Medir el rendimiento para claves de 2048 y 4096 bits
         //MedirRendimiento(2048, nIterations, "rsa1_2048.csv");
         MedirRendimiento(4096, nIterations, "rsa2_4096.csv");). 
@@ -30,5 +32,3 @@ y subdividimos de forma manual en nuevos archivos según la versión del algorit
 2º java -cp "bin:lib/*" src.Dilithium_Rend
 
 **En C#, limpiar con dotnet clean. Compilar con dotnet build, y ejecutar con dotnet run.
-
-** Solo se proporcionan los ficheros que se han modificado para realizar la pruebas, en el caso de C y Python habría que clonar los repositorios indicados, y en Java y C#, instalar la librería de Bouncy Castle, junto a las herramientas de desarrollo para trabajar con ambos lenguajes (Java (JDK) y .NET SDK respectivamente)
