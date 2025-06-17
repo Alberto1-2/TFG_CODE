@@ -22,4 +22,13 @@ Para los lenguajes de C# y Java, se han diseñado a partir de la web https://ase
                 _ => throw new ArgumentException("Invalid size"),
             }; donde se puede modificar la ejecución.)
 
+*** Para los casos en Java, se generan 2 archivos, uno global (.csv) que muestra los resultados finales, y 
+otro con la información de la iteraciones para generar las gráficas, que sale con todas las iteraciones,
+y subdividimos de forma manual en nuevos archivos según la versión del algoritmo, para poder obtener las gráficas correctamente. 
+
+**Para ejecutar java, p.ej en Diltihium 1º javac -cp "lib/*:bin" -d bin src/Dilithium_Rend.java
+2º java -cp "bin:lib/*" src.Dilithium_Rend
+
+**En C#, limpiar con dotnet clean. Compilar con dotnet build, y ejecutar con dotnet run.
+
 ** Solo se proporcionan los ficheros que se han modificado para realizar la pruebas, en el caso de C y Python habría que clonar los repositorios indicados, y en Java y C#, instalar la librería de Bouncy Castle, junto a las herramientas de desarrollo para trabajar con ambos lenguajes (Java (JDK) y .NET SDK respectivamente)
